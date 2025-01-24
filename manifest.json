@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Halo Copy Button",
+    "version": "1.0",
+    "description": "Adds a copy button to each comment and reply on halo.gcu.edu.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["*://halo.gcu.edu/*"],
+ 
+    "content_scripts": [
+      {
+        "matches": ["*://halo.gcu.edu/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  } 
